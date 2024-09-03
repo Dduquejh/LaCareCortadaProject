@@ -49,8 +49,12 @@ function NavBar() {
                     <li><a href="about.html">Models</a></li>
                     <li><a href="contact.html">Products</a></li>
                     <li><a href="contact.html">Events</a></li>
-                    <button className="border border-white rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black">Log In</button>
-                    <button className="border border-white rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black">Sign In</button>
+                    <Link to="/LogIn" className="text-gray-900 dark:text-white hover:underline">
+                        <button className="border border-white rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black">Log In</button>
+                    </Link>
+                    <Link to="/SignIn" className="text-gray-900 dark:text-white hover:underline">
+                        <button className="border border-white rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black">Sign In</button>
+                    </Link>
                 </ul>
             </div>
             {/* Menú desplegable */}
@@ -70,10 +74,14 @@ function NavBar() {
                             <a href="contact.html">Events</a>
                         </li>
                         <li className="border-b border-white w-full text-center">
-                            <button className="w-full text-white hover:bg-white hover:text-black py-2">Log In</button>
+                            <Link to="/LogIn" className="text-gray-900 dark:text-white hover:underline">
+                                <button className="w-full text-white hover:bg-white hover:text-black py-2">Log In</button>
+                            </Link>
                         </li>
                         <li className="border-b border-white w-full text-center">
-                            <button className="w-full text-white hover:bg-white hover:text-black py-2">Sign In</button>
+                            <Link to="/SignIn" className="text-gray-900 dark:text-white hover:underline">
+                                <button className="w-full text-white hover:bg-white hover:text-black py-2">Sign In</button>
+                            </Link>
                         </li>
                     </ul>
                 </div>
