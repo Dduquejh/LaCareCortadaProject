@@ -4,10 +4,15 @@ import Slider from "react-slick";
 
 interface CardSliderProps {
     image: string;
-    name: string;
+    name?: string;
 }
 
-export const CardSlider = ( {list} : {list: CardSliderProps[]}) => {
+interface CardSliderComponentProps {
+    list: CardSliderProps[];
+    showName?: boolean;
+}
+
+export const CardSlider = ( { list, showName = true }: CardSliderComponentProps) => {
     let settings = {
         arrows: true,
         dots: true,
@@ -24,7 +29,9 @@ export const CardSlider = ( {list} : {list: CardSliderProps[]}) => {
                 {list.map((item, index) => (
                     <div key={index} className="px-5">
                         <img src={item.image} alt={item.name} className="bg-black"/>
-                        <h3 className="bg-red-700 text-white">{item.name}</h3>
+                        {showName && item.name && (
+                            <h3 className="bg-red-700 text-white">{item.name}</h3>
+                        )}
                     </div>
                 ))}
             </Slider>
