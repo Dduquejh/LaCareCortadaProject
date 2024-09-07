@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-interface ProductproductProps {
+interface ProductProps {
     code: number;
     image: string;
     name: string;
     price: number;
 }
 
-export const ProductItem = ({list} : {list: ProductproductProps[]}) => {
+export const ProductItem = ({list} : {list: ProductProps[]}) => {
     return(
         <>
             {list.map((product) => (
