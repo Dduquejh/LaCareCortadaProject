@@ -47,7 +47,7 @@ function NavBar() {
                         <Link to="/" className="text-gray-900 dark:text-white hover:underline">Home</Link>
                     </li>
                     <li><a href="about.html">Models</a></li>
-                    <li><a href="contact.html">Products</a></li>
+                    <li><Link to="/Products">Products</Link></li>
                     <li><a href="contact.html">Events</a></li>
                     <Link to="/LogIn" className="text-gray-900 dark:text-white hover:underline">
                         <button className="border border-white rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black">Log In</button>
