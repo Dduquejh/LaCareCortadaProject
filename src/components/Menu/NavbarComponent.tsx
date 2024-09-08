@@ -32,7 +32,7 @@ function NavBar() {
     }, [isAnimating, isClosing]);
 
     return (
-        <nav className="bg-black p-3 border-b-2 border-white relative">
+        <nav className="bg-black p-3 border-b-2 border-white relative z-50">
             <div className="flex items-center justify-between px-20 py-2">
                 <p className="text-white font-old-english text-[32px] mr-auto">Andrea Mesa</p>
                 <div className="lg:hidden">
