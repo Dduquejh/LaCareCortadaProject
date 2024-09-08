@@ -46,8 +46,12 @@ function NavBar() {
                     <li className="first:text-pink-500">
                         <Link to="/" className="text-gray-900 dark:text-white hover:underline">Home</Link>
                     </li>
-                    <li><a href="about.html">Models</a></li>
-                    <li><Link to="/Products">Products</Link></li>
+                    <li>
+                        <Link to="/Models">Models</Link>
+                    </li>
+                    <li>
+                        <Link to="/Products">Products</Link>
+                    </li>
                     <li><a href="contact.html">Events</a></li>
                     <Link to="/LogIn" className="text-gray-900 dark:text-white hover:underline">
                         <button className="border border-white rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black">Log In</button>
@@ -65,10 +69,10 @@ function NavBar() {
                             <Link to="/" className="text-gray-900 dark:text-white hover:underline">Home</Link>
                         </li>
                         <li className="border-b border-white w-full text-center">
-                            <a href="about.html">Models</a>
+                            <Link to="/Models" className="text-gray-900 dark:text-white hover:underlines">Models</Link>
                         </li>
                         <li className="border-b border-white w-full text-center">
-                            <a href="contact.html">Products</a>
+                            <Link to="/Products" className="text-gray-900 dark:text-white hover:underline">Products</Link>
                         </li>
                         <li className="border-b border-white w-full text-center">
                             <a href="contact.html">Events</a>

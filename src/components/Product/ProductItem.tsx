@@ -12,7 +12,7 @@ export const ProductItem = ({list} : {list: ProductProps[]}) => {
         <>
             {list.map((product) => (
                 <div key={product.code} className="bg-gray-100 w-1/4 m-2 p-2">
-                    <Link to={`/product/${product.code}`}>
+                    <Link to={`/Product/${product.code}`}>
                         <img src={product.image} alt={product.name} className="w-full"/>
                         <h3>{product.name}</h3>
                         <h3>{product.price}</h3>

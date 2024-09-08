@@ -1,22 +1,99 @@
 export const models = [
-    {
+    {   
+        id: 1,
         name: "John Doe",
-        image: "/assets/test.jpg"
+        image: "/assets/test.jpg",
+        imgs: [
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+        ],
+        description: "Description 1",
+        portfolio: "link.com",
+        bookin: [
+            "link.com",
+            "link.com",
+            "link.com",
+        ],
+        achievements: [
+            "Achievement 1",
+            "Achievement 2",
+            "Achievement 3",
+        ]
     },
 
     {
+        id: 2,
         name: "John Doe 1",
-        image: "/assets/test.jpg"
+        image: "/assets/test.jpg",
+        imgs: [
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+        ],
+        description: "Description 1",
+        portfolio: "link.com",
+        bookin: [
+            "link.com",
+            "link.com",
+            "link.com",
+        ],
+        achievements: [
+            "Achievement 1",
+            "Achievement 2",
+            "Achievement 3",
+        ]
+
     },
 
     {
+        id: 3,
         name: "John Doe 2",
-        image: "/assets/test.jpg"
+        image: "/assets/test.jpg",
+        imgs: [
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+        ],
+        description: "Description 1",
+        portfolio: "link.com",
+        bookin: [
+            "link.com",
+            "link.com",
+            "link.com",
+        ],
+        achievements: [
+            "Achievement 1",
+            "Achievement 2",
+            "Achievement 3",
+        ]
     },
 
     {
+        id: 4,
         name: "John Doe 3",
-        image: "/assets/test.jpg"
+        image: "/assets/test.jpg",
+        imgs: [
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+        ],
+        description: "Description 1",
+        portfolio: "link.com",
+        bookin: [
+            "link.com",
+            "link.com",
+            "link.com",
+        ],
+        achievements: [
+            "Achievement 1",
+            "Achievement 2",
+            "Achievement 3",
+        ]
     },
 ]
 
