@@ -103,28 +103,52 @@ export const products = [
         name: "Product 1",
         image: "/assets/test.jpg",
         price: 100,
-        description: "Description 1"
+        description: "Description 1",
+        imgs: [
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+        ],
     },
     {
         code: 2,
         name: "Product 2",
         image: "/assets/test.jpg",
         price: 200,
-        description: "Description 2"
+        description: "Description 2",
+        imgs: [
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+        ],
     },
     {
         code: 3,
         name: "Product 3",
         image: "/assets/test.jpg",
         price: 300,
-        description: "Description 3"
+        description: "Description 3",
+        imgs: [
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+        ],
     },
     {
         code: 4,
         name: "Product 4",
         image: "/assets/test.jpg",
         price: 400,
-        description: "Description 4"
+        description: "Description 4",
+        imgs: [
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+            "/assets/test.jpg",
+        ],
     }
     
 ]
