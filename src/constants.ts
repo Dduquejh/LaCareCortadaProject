@@ -99,7 +99,7 @@ export const models = [
 
 export const products = [
     {
-        code: 1,
+        id: 1,
         name: "Product 1",
         image: "/assets/test.jpg",
         price: 100,
@@ -112,7 +112,7 @@ export const products = [
         ],
     },
     {
-        code: 2,
+        id: 2,
         name: "Product 2",
         image: "/assets/test.jpg",
         price: 200,
@@ -125,7 +125,7 @@ export const products = [
         ],
     },
     {
-        code: 3,
+        id: 3,
         name: "Product 3",
         image: "/assets/test.jpg",
         price: 300,
@@ -138,7 +138,7 @@ export const products = [
         ],
     },
     {
-        code: 4,
+        id: 4,
         name: "Product 4",
         image: "/assets/test.jpg",
         price: 400,
@@ -185,5 +185,32 @@ export const events = [
         location: "Location 4",
         date: "Date 4",
         hour: "Hour 4",
+    }
+]
+
+export const gallery = [
+    {
+        id: 1,
+        name: "Gallery 1",
+        description: "Description 1",
+        image: "/assets/test.jpg",
+    },
+    {
+        id: 2,
+        name: "Gallery 2",
+        description: "Description 1",
+        image: "/assets/test.jpg",
+    },
+    {
+        id: 3,
+        name: "Gallery 3",
+        description: "Description 1",
+        image: "/assets/test.jpg",
+    },
+    {
+        id: 4,
+        name: "Gallery 4",
+        description: "Description 1",
+        image: "/assets/test.jpg",
     }
 ]

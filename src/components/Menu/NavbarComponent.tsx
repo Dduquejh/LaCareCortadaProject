@@ -91,6 +91,14 @@ function NavBar() {
               Events
             </Link>
           </li>
+          <li>
+            <Link
+              to="/Gallery"
+              className="text-gray-900 dark:text-white hover:underline"
+            >
+              Gallery
+            </Link>
+          </li>
           <Link
             to="/LogIn"
             className="text-gray-900 dark:text-white hover:underline"
@@ -147,6 +155,14 @@ function NavBar() {
                 className="text-gray-900 dark:text-white hover:underline"
               >
                 Events
+              </Link>
+            </li>
+            <li className="border-b border-white w-full text-center">
+              <Link
+                to="/Gallery"
+                className="text-gray-900 dark:text-white hover:underline"
+              >
+                Gallery
               </Link>
             </li>
             <li className="border-b border-white w-full text-center">

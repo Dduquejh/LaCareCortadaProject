@@ -9,6 +9,8 @@ import ViewProduct from "../Product/ViewProduct";
 import Models from "../Pages/Models";
 import ViewModel from "../Model/ViewModel";
 import Events from "../Pages/Events";
+import { Gallery } from "../Pages/Gallery";
+import ViewMedia from "../Media/ViewMedia";
 
 export const RouterR = () => {
   return (
@@ -23,6 +25,8 @@ export const RouterR = () => {
         <Route path="/Models" element={<Models />} />
         <Route path="/Model/:modelID" element={<ViewModel />} />
         <Route path="/Events" element={<Events />} />
+        <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/Media/:id" element={<ViewMedia />} />
         <Route path="*" element={<ErrorComponent />} />
       </Routes>
     </Router>
