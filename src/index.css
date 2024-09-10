@@ -1,13 +1,12 @@
-
 @font-face {
-  font-family: 'Old English Text MT';
-  src: url('/assets/oldenglishtextmt.ttf'); 
+  font-family: "Old English Text MT";
+  src: url("/assets/oldenglishtextmt.ttf");
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    @apply bg-gray-900;
+body {
+  @apply bg-gray-900;
 }
