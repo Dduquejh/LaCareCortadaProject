@@ -4,7 +4,6 @@ import { CardSlider } from "../CardSlider";
 
 const ViewModel = () => {
   const { modelID } = useParams<{ modelID: string }>();
-  console.log(modelID);
   if (!modelID) return "Model not found";
 
   const model = models.find((model) => model.id === +modelID);
@@ -35,7 +34,7 @@ const ViewModel = () => {
         </a>
         <div className="flex justify-center mt-8">
           <CardSlider
-            list={model.imgs.map((img) => ({ image: img }))}
+            list={model.imgs.map((img, index) => ({ image: img, id: index }))}
             showName={false}
           />
         </div>

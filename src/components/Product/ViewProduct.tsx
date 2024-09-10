@@ -6,7 +6,7 @@ const ViewProduct = () => {
   const { code } = useParams<{ code: string }>();
   if (!code) return "Code not found";
 
-  const product = products.find((product) => product.code === +code);
+  const product = products.find((product) => product.id === +code);
 
   if (!product) return "Product not found";
 
@@ -28,7 +28,7 @@ const ViewProduct = () => {
           </div>
         </div>
         <a
-          href={`/${product.code}`} // Ajusta esto según la URL deseada
+          href={`/${product.id}`} // Ajusta esto según la URL deseada
           target="_blank"
           rel="noopener noreferrer"
           className="text-white bg-sky-950 p-2 rounded-lg flex items-center justify-center w-full hover:bg-sky-800"
@@ -37,7 +37,7 @@ const ViewProduct = () => {
         </a>
         <div className="flex justify-center mt-8">
           <CardSlider
-            list={product.imgs.map((img) => ({ image: img }))}
+            list={product.imgs.map((img, index) => ({ image: img, id: index }))}
             showName={false}
           />
         </div>
