@@ -152,3 +152,38 @@ export const products = [
     }
     
 ]
+
+export const events = [
+    {
+        id: 1,
+        name: "Event 1",
+        city: "City 1",
+        location: "Location 1",
+        date: "Date 1",
+        hour: "Hour 1",
+    },
+    {
+        id: 2,
+        name: "Event 2",
+        city: "City 2",
+        location: "Location 2",
+        date: "Date 2",
+        hour: "Hour 2",
+    },
+    {
+        id: 3,
+        name: "Event 3",
+        city: "City 3",
+        location: "Location 3",
+        date: "Date 3",
+        hour: "Hour 3",
+    },
+    {
+        id: 4,
+        name: "Event 4",
+        city: "City 4",
+        location: "Location 4",
+        date: "Date 4",
+        hour: "Hour 4",
+    }
+]
