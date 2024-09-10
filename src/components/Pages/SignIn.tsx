@@ -1,7 +1,5 @@
 
 import { Link } from 'react-router-dom';
-
-// Imágenes de ejemplo; puedes reemplazarlas con las imágenes adecuadas
 import userImage from '../../images/Admin.jpeg'; 
 import adminImage from '../../images/User.jpeg'; 
 
@@ -42,7 +40,6 @@ const SignUp = () => {
                     </h2>
                 </Link>
             </div>
-
         </div>
     );
 };
