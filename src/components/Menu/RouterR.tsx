@@ -11,6 +11,7 @@ import ViewModel from "../Model/ViewModel";
 import Events from "../Pages/Events";
 import { Gallery } from "../Pages/Gallery";
 import ViewMedia from "../Media/ViewMedia";
+import AdminPanel from "../Pages/AdminPanel";
 
 export const RouterR = () => {
   return (
@@ -27,6 +28,7 @@ export const RouterR = () => {
         <Route path="/Events" element={<Events />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Media/:id" element={<ViewMedia />} />
+        <Route path="/AdminPanel" element={<AdminPanel />} />
         <Route path="*" element={<ErrorComponent />} />
       </Routes>
     </Router>
