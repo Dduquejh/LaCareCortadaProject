@@ -1,9 +1,13 @@
 import { useState } from "react";
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/outline';
 
-const LogIn = () => {
+const LogIn = ({ setIsLoggedIn }) => {
     const [showPassword, setShowPassword] = useState(false);
 
+    const handleLogin = (e) => {
+        e.preventDefault();
+        setIsLoggedIn(true);
+    };
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-black p-4 text-white">
             <h1 className="text-6xl font-old-english mb-6 animate-pulse text-center text-red-600">
@@ -54,6 +58,7 @@ const LogIn = () => {
                 <button
                     type="submit"
                     className="w-full py-3 text-lg font-bold text-black bg-red-600 rounded-lg hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-red-600"
+                    onClick={handleLogin}
                 >
                     LOG IN
                 </button>

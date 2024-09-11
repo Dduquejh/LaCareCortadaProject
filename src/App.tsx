@@ -1,13 +1,11 @@
 import './App.css'
 import { RouterR } from './components/Menu/RouterR'
-
-import { models } from './constants'
-import { CardSlider } from './components/CardSlider'
+import { useState } from 'react';
 function App() {
-
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <>
-      <RouterR/>
+      <RouterR isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
     </>
   )
 }

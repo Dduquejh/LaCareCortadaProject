@@ -12,7 +12,7 @@ const SignUp = () => {
             <div className="flex flex-col md:flex-row gap-12">
                 {/* Cuadro para Usuario */}
                 <Link
-                    to="/user-signup"
+                    to="/SignInUser"
                     className="flex flex-col items-center justify-center w-full md:w-1/2 p-12 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition-colors"
                 >
                     <img
@@ -27,7 +27,7 @@ const SignUp = () => {
                 
                 {/* Cuadro para Admin */}
                 <Link
-                    to="/admin-signup"
+                    to="/SignInAdmin"
                     className="flex flex-col items-center justify-center w-full md:w-1/2 p-12 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition-colors"
                 >
                     <img

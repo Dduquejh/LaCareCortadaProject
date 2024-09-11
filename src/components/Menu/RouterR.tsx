@@ -11,15 +11,19 @@ import ViewModel from "../Model/ViewModel";
 import Events from "../Pages/Events";
 import { Gallery } from "../Pages/Gallery";
 import ViewMedia from "../Media/ViewMedia";
+import SignInUser from "../Pages/SignInUser";
+import SignInAdmin from "../Pages/SignInAdmin";
 
-export const RouterR = () => {
+export const RouterR = ({ isLoggedIn, setIsLoggedIn }) => {
   return (
     <Router>
-      <NavBar />
+      <NavBar isLoggedIn={isLoggedIn} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/LogIn" element={<LogIn />} />
+        <Route path="/LogIn" element={<LogIn setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/SignInUser" element={<SignInUser />} />
+        <Route path="/SignInAdmin" element={<SignInAdmin />} />
         <Route path="/Products" element={<Products />} />
         <Route path="/Product/:code" element={<ViewProduct />} />
         <Route path="/Models" element={<Models />} />
