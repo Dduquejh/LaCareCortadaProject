@@ -14,6 +14,7 @@ import ViewMedia from "../Media/ViewMedia";
 import AdminPanel from "../Pages/AdminPanel";
 import SignInUser from "../Pages/SignInUser";
 import SignInAdmin from "../Pages/SignInAdmin";
+import { Account } from "../Pages/Account";
 
 export const RouterR = ({ isLoggedIn, setIsLoggedIn }) => {
   return (
@@ -25,6 +26,7 @@ export const RouterR = ({ isLoggedIn, setIsLoggedIn }) => {
         <Route path="/SignIn" element={<SignIn />} />
         <Route path="/SignInUser" element={<SignInUser />} />
         <Route path="/SignInAdmin" element={<SignInAdmin />} />
+        <Route path="/account" element={<Account setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/Products" element={<Products />} />
         <Route path="/Product/:code" element={<ViewProduct />} />
         <Route path="/Models" element={<Models />} />

@@ -127,7 +127,14 @@ function NavBar({ isLoggedIn }) {
                     {isLoggedIn && (
                         <li className="flex items-center space-x-4 ml-4">
                             {/* Ícono del usuario */}
-                            <UserIcon className="w-10 h-10 text-white" />
+                            <Link
+                                to="/account"
+                                className="group"
+                            >
+                                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white group-hover:bg-black transition-colors duration-300">
+                                    <UserIcon className="w-6 h-6 text-black group-hover:text-white transition-colors duration-300" />
+                                </div>
+                            </Link>
                         </li>
                     )}
                 </ul>
@@ -207,7 +214,14 @@ function NavBar({ isLoggedIn }) {
                         {isLoggedIn && (
                             <li className="flex items-center space-x-4 ml-4">
                                 {/* Ícono del usuario */}
-                                <UserIcon className="w-10 h-10 text-white" />
+                                <Link
+                                    to="/account"
+                                    className="group"
+                                >
+                                    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white group-hover:bg-black transition-colors duration-300">
+                                        <UserIcon className="w-6 h-6 text-black group-hover:text-white transition-colors duration-300" />
+                                    </div>
+                                </Link>
                             </li>
                         )}
                     </ul>
