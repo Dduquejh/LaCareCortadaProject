@@ -11,6 +11,7 @@ import ViewModel from "../Model/ViewModel";
 import Events from "../Pages/Events";
 import { Gallery } from "../Pages/Gallery";
 import ViewMedia from "../Media/ViewMedia";
+import AdminPanel from "../Pages/AdminPanel";
 import SignInUser from "../Pages/SignInUser";
 import SignInAdmin from "../Pages/SignInAdmin";
 
@@ -31,6 +32,7 @@ export const RouterR = ({ isLoggedIn, setIsLoggedIn }) => {
         <Route path="/Events" element={<Events />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Media/:id" element={<ViewMedia />} />
+        <Route path="/AdminPanel" element={<AdminPanel />} />
         <Route path="*" element={<ErrorComponent />} />
       </Routes>
     </Router>
