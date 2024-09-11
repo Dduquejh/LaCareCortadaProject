@@ -1,15 +1,12 @@
-import './App.css'
-import { RouterR } from './components/Menu/RouterR'
+import "./App.css";
+import { RouterR } from "./components/Menu/RouterR";
 
-import { models } from './constants'
-import { CardSlider } from './components/CardSlider'
 function App() {
-
   return (
     <>
-      <RouterR/>
+      <RouterR />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
