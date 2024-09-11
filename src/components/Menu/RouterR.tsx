@@ -15,6 +15,7 @@ import AdminPanel from "../Pages/AdminPanel";
 import SignInUser from "../Pages/SignInUser";
 import SignInAdmin from "../Pages/SignInAdmin";
 import { Account } from "../Pages/Account";
+import ContactUsComponent from "./ContactUsComponent";
 
 export const RouterR = ({ isLoggedIn, setIsLoggedIn }) => {
   return (
@@ -37,6 +38,7 @@ export const RouterR = ({ isLoggedIn, setIsLoggedIn }) => {
         <Route path="/AdminPanel" element={<AdminPanel />} />
         <Route path="*" element={<ErrorComponent />} />
       </Routes>
+      <ContactUsComponent/>
     </Router>
   );
 };
